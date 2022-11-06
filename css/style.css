@@ -229,6 +229,9 @@ a.current {
   fill: var(--link-hover-color);
 }
 
+.header .header-contact-link:focus .header-contact-icon {
+  fill: var(--link-hover-color);
+}
 
 /* Banner styles */
 
@@ -457,10 +460,12 @@ a.current {
   fill: var(--icon-grey-color);
 }
 
-.team-list .social-icon:hover {
+.team-list .social-icon:hover, 
+.team-list .social-icon:focus {
   fill: var(--main-background-color);
 }
-.team-list .social-link:hover {
+.team-list .social-link:hover,
+.team-list .social-link:focus {
   background-color: var(--link-hover-color);
 }
 
@@ -512,11 +517,13 @@ justify-content: center;
   fill: var(--icon-grey-color);
 }
 
-.our-clients svg:hover {
+.our-clients svg:hover,
+.our-clients svg:focus {
   fill: var(--link-hover-color);
 }
 
-.our-clients-list .our-client:hover {
+.our-clients-list .our-client:hover,
+.our-clients-list .our-client:focus {
   border: 1px solid var(--link-hover-color);
 }
 
@@ -611,7 +618,8 @@ address {
   fill: var(--main-background-color);
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--link-hover-color);
 }
 
