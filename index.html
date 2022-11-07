@@ -67,7 +67,7 @@
               class="header-contact-link header-link active-link"
               href="tel:+380961111111"
             >
-              <svg class="header-contact-icon header-mail-icon" width="16" height="12">
+              <svg class="header-contact-icon header-mail-icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#smartphone"></use>
               </svg>
               <span>+38 096 111 11 11</span> 
@@ -99,6 +99,11 @@
           <h2 class="visually-hidden">Наші особливості</h2>
           <ul class="description-blocks">
             <li class="description-item">
+              <div class="description-icons">
+                <svg class="descr-icon"  width="70" height="70">
+                  <use href="./images/symbol-defs.svg#d-antenna"></use>
+                </svg>
+              </div>
               <h3 class="description-title">Увага до деталей</h3>
               <p class="desctiption-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -107,7 +112,11 @@
             </li>
 
             <li class="description-item">
-              <!-- <svg></svg> -->
+              <div class="description-icons">
+                <svg class="descr-icon"  width="70" height="70">
+                  <use href="./images/symbol-defs.svg#d-clock"></use>
+                </svg>
+              </div>
               <h3 class="description-title">Пунктуальність</h3>
               <p class="desctiption-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -116,7 +125,11 @@
             </li>
 
             <li class="description-item">
-              <!-- <svg></svg> -->
+              <div class="description-icons">
+                <svg class="descr-icon"  width="70" height="70">
+                  <use href="./images/symbol-defs.svg#diagram"></use>
+                </svg>
+              </div>
               <h3 class="description-title">Планування</h3>
               <p class="desctiption-text">
                 Так само консультація з широким активом значною мірою зумовлює.
@@ -124,7 +137,11 @@
             </li>
 
             <li class="description-item">
-              <!-- <svg></svg> -->
+              <div class="description-icons">
+                <svg class="descr-icon"  width="70" height="70">
+                  <use href="./images/symbol-defs.svg#d-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="description-title">Сучасні технології</h3>
               <p class="desctiption-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -424,9 +441,8 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <ul class="footer-blocks">
-          <li class="footer-block-contacts">
+      <div class="container footer-block">
+        <div class="footer-block-contacts">
             <a href="" class="logo logo-footer">
               <span class="logo-web">Web</span
               ><span class="logo-studio-footer">Studio</span>
@@ -454,9 +470,9 @@
                 </li>
               </ul>
             </address>
-          </li>
+          </div>
 
-          <li class="footer-block-soclinks">
+          <div class="footer-block-soclinks">
             <p>Приєднуйтесь</p>
             <ul class="social-icons list">
               <li class="social-item">
@@ -491,8 +507,8 @@
                 </a>
               </li>
             </ul>
-          </li>
-        </ul>
+        </div>
+
       </div>
     </footer>
   </body>

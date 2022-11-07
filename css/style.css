@@ -27,7 +27,7 @@ html {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
   background-color: var(--main-background-color);
-  width: 1600px;
+  /* width: 1600px; */
 }
 
 .container {
@@ -238,13 +238,15 @@ a.current {
 .main-banner {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-hero-color);
+  width: 1600px;
+  /* background-color: var(--background-hero-color); */
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url('../images/bcg-hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-banner-text h2 {
@@ -300,39 +302,18 @@ a.current {
   margin-right: 30px;
 }
 
-.description-blocks li::before {
-  margin-bottom: 30px;
-}
+.description-blocks div {
+  height: 120px; 
 
-
-.description-item::before {
-  display: block;
-  content: "";
-  height: 120px;
   background-color: var(--background-third-color);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-}
-
-.description-blocks li:nth-child(1)::before {
-  background-image: url("../images/icons/d-antenna.svg");
-}
-
-.description-blocks li:nth-child(2)::before {
-  background-image: url("../images/icons/d-clock.svg");
-}
-
-.description-blocks li:nth-child(3)::before {
-  background-image: url("../images/icons/diagram.svg");
-}
-
-.description-blocks li:nth-child(4)::before {
-  background-image: url("../images/icons/d-astronaut.svg");
+  display: flex;
+  background-position: contain;
+  align-items: center;
+  justify-content: center;
 }
 
 .description h3 {
+  margin-top: 30px;
   margin-bottom: 10px;
   text-align: left;
 }
@@ -429,7 +410,7 @@ a.current {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin: 16px 32px 0 32px;
+  margin-top: 16px;
 }
 
 .team-list .social-link {
@@ -449,7 +430,6 @@ a.current {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-  border-radius: 50%;
 }
 
 .team-list .social-item:last-child {
@@ -460,19 +440,21 @@ a.current {
   fill: var(--icon-grey-color);
 }
 
-.team-list .social-icon:hover, 
-.team-list .social-icon:focus {
-  fill: var(--main-background-color);
-}
 .team-list .social-link:hover,
 .team-list .social-link:focus {
   background-color: var(--link-hover-color);
 }
 
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: var(--main-background-color);
+}
+
 /* Our clients */
 
 .our-clients {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-clients h2 {
@@ -486,7 +468,6 @@ a.current {
 
 .our-clients ul {
 display: flex;
-justify-content: center;
 }
 
 .our-clients-list li {
@@ -510,16 +491,9 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-}
-
+  border-radius: 50%;}
 .our-clients-list svg {
   fill: var(--icon-grey-color);
-}
-
-.our-clients svg:hover,
-.our-clients svg:focus {
-  fill: var(--link-hover-color);
 }
 
 .our-clients-list .our-client:hover,
@@ -527,6 +501,11 @@ justify-content: center;
   border: 1px solid var(--link-hover-color);
 }
 
+.client-link:hover svg,
+.client-link:focus svg {
+  fill: var(--link-hover-color);
+
+}
 
 /* Footer */
 
@@ -575,22 +554,19 @@ address {
 
 /* Footer social icons */
 
-.footer-blocks {
-  display:flex;
+.footer-block {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-block-soclinks {
   margin-left: 70px;
-  margin-top: 12px;
-}
-
-.footer-block-soclinks ul {
-  margin: 0px;
 }
 
 .footer-block-soclinks .social-icons {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .footer .social-link {
@@ -631,7 +607,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-background-color);
-
 }
 
 /* Portfolio page */
@@ -699,11 +674,12 @@ address {
   margin-right: 0;
 }
 
-.project-box:hover {
+.project-box:hover a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-box img {
+.project-box img,
+.project-box a {
   display: block;
 }
 
@@ -734,4 +710,3 @@ address {
 }
 
 
-x
